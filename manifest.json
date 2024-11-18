@@ -1,0 +1,20 @@
+{
+    "name": "Hello Extensions",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts":[{
+    "matches":[],
+    "js":["msg.js"],
+
+    "all_frames":true
+  }],
+    "action": {
+      "default_icon": "hello_extensions.png",
+       "default_title": "Inject Button"
+    }
+  }
